@@ -7,10 +7,10 @@
 # Пользователь ввел число 1. Результат: 7, 5, 3, 3, 2, 1.
 # Набор натуральных чисел можно задать непосредственно в коде, например, my_list = [7, 5, 3, 3, 2].
 
+
 rating = [9, 8, 5, 4, 4, 4, 3]
 print ("В этой программе нужно вводить натуральные числа. Для завершения работы введите 0")
 print ("Исходный рейтинг: ", rating)
-#count = 0
 while True:
     number = int (input ("Укажите рейтинг: "))
     # нужно ли выходить
@@ -20,7 +20,7 @@ while True:
     else:
         # в рейтинге уже есть такое число
         if rating.count (number) != 0:
-            rating.insert (rating.index (number) + 1, number)
+            rating.insert (rating.index (number) + rating.count (number), number)
         # в рейтинге пока нет такого числа
         else:
             for i in rating:

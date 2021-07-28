@@ -3,13 +3,15 @@
 # Строки необходимо пронумеровать.
 # Если в слово длинное, выводить только первые 10 букв в слове.
 
+
 my_string = input ("Введите строку: ")
 my_list = my_string.split (' ')
 count = 1
 for i in my_list:
     print (count, end = ' ')
-    if len (i) >= 9:
-        print (i[:10])
-    else:
-        print (i)
+    print(i[:10])
+    # if len (i) >= 9:
+    #     print (i[:10])
+    # else:
+    #     print (i)
     count += 1
